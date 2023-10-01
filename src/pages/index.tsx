@@ -27,9 +27,9 @@ export default function Home() {
             >
               <path
                 fill="#2962FF"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M4.464 18.71c-5.133 5.131-5.133 13.449 0 18.58l14.868 14.862c5.133 5.13 13.454 5.13 18.586 0L52.786 37.29c5.133-5.13 5.133-13.448 0-18.579L37.918 3.848c-5.133-5.13-13.454-5.13-18.586 0L4.464 18.71ZM35.13 34.503a9.193 9.193 0 0 0 0-13.006 9.2 9.2 0 0 0-13.01 0 9.193 9.193 0 0 0 0 13.006 9.202 9.202 0 0 0 13.01 0Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
               <path
                 fill="#0F172A"
@@ -43,8 +43,8 @@ export default function Home() {
               fill="#2962ff"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M13.742 66.824c-18.323 18.323-18.323 48.029 0 66.352l53.082 53.082c18.323 18.323 48.029 18.323 66.352 0l53.082-53.082c18.323-18.323 18.323-48.03 0-66.352l-53.082-53.082c-18.323-18.323-48.03-18.323-66.352 0L13.742 66.824zm109.481 56.399c12.826-12.826 12.826-33.62 0-46.446s-33.62-12.826-46.446 0-12.826 33.62 0 46.446 33.62 12.826 46.446 0z"
               ></path>
             </svg>
@@ -61,7 +61,7 @@ export default function Home() {
           <Button className="bg-hashaccent text-primary-foreground">
             Test Colors
           </Button>
-          <p className="text-hashforeground text-2xl">Hashnode Foreground</p>
+          <p className="text-2xl text-hashforeground">Hashnode Foreground</p>
 
           <div className="flex flex-col items-center gap-2">
             <p className="text-2xl ">
