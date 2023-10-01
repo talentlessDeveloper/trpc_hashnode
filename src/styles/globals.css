@@ -78,6 +78,11 @@
   * {
     @apply border-border;
   }
+
+  html {
+    @apply scroll-smooth font-sans;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
