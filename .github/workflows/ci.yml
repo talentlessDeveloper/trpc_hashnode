@@ -5,7 +5,6 @@ on: [push, pull_request]
 env:
   DATABASE_URL: "https://fake.com"
   NEXTAUTH_SECRET: "fakenextauthsecret"
-  NEXTAUTH_URL: "fakenextauthurl"
   GOOGLE_CLIENT_ID: "fakegoogleclientid"
   GOOGLE_CLIENT_SECRET: "fakegoogleclientsecret"
 
