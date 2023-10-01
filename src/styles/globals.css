@@ -40,7 +40,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 0 0% 0%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -48,7 +48,7 @@
 
     --hashnode-accent: 221 83% 53%;
 
-    --hashnode-foreground: 215 25% 50%;
+    --hashnode-foreground: 215 25% 35%;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
