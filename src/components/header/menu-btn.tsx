@@ -15,17 +15,17 @@ const MenuBtn = ({ openMenu, handleMenu }: MenuBtnProps) => {
       onClick={handleMenu}
     >
       <span
-        className={`block h-0.5 w-4 bg-slate-950 transition-opacity duration-500 ${
+        className={`block h-0.5 w-4 bg-foreground transition-opacity duration-500 ${
           openMenu ? "opacity-0" : "opacity-1"
         }`}
       ></span>
       <span
-        className={`block h-0.5 w-6 bg-slate-950 transition-transform duration-500 ${
+        className={`block h-0.5 w-6 bg-foreground transition-transform duration-500 ${
           openMenu ? "translate-x-1 translate-y-2 rotate-45" : ""
         }`}
       ></span>
       <span
-        className={`block  h-0.5 w-8 bg-slate-950 transition-transform duration-500 ${
+        className={`block  h-0.5 w-8 bg-foreground transition-transform duration-500 ${
           openMenu ? "-rotate-45" : ""
         }`}
       ></span>

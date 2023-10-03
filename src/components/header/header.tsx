@@ -5,9 +5,13 @@ import Image from "next/image";
 import { Bell, Pencil, Search } from "lucide-react";
 import HeaderMenu from "./header-menu";
 import MenuBtn from "./menu-btn";
+import SignUpModal from "../modals/signup";
+import { Avatar, AvatarImage } from "../ui/avatar";
+import { AvatarFallback } from "@radix-ui/react-avatar";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openSignUpModal, setOpenSignUpModal] = useState(false);
   const handleMenu = () => {
     setOpenMenu((p) => !p);
   };
@@ -76,20 +80,24 @@ const Header = () => {
             </span>
           </Button>
           <div>
-            <Button className="h-12 w-12 rounded-full border border-solid border-transparent bg-transparent p-0 text-hashforeground duration-300 hover:border-border hover:bg-transparent">
-              <Image
-                src="/images/hashnode_avatar.png"
-                alt="user avatar"
-                width={40}
-                height={40}
-                className=" rounded-full object-cover"
-              />
+            <Button
+              className="h-12 w-12 rounded-full border border-solid border-transparent bg-transparent p-0 text-hashforeground duration-300 hover:border-border hover:bg-transparent"
+              onClick={() => setOpenSignUpModal(true)}
+            >
+              <Avatar>
+                <AvatarImage src="/images/hashnode_avatar.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
             </Button>
           </div>
           <ModeToggle />
         </div>
       </nav>
       <HeaderMenu openMenu={openMenu} />
+      <SignUpModal
+        setOpenSignUpModal={setOpenSignUpModal}
+        openSignUpModal={openSignUpModal}
+      />
     </header>
   );
 };
