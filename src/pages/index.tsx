@@ -7,9 +7,9 @@ import { api } from "~/utils/api";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 
-import polkaDot from "../assets/images/hashnode_polka.webp";
-import gradient from "../assets/images/hashnode_blur.webp";
-import heroImage from "../assets/images/hashnode__hero.webp";
+import polkaDot from "/images/hashnode_polka.webp";
+import gradient from "/images/hashnode_blur.webp";
+import heroImage from "/images/hashnode__hero.webp";
 
 const inter = Inter({
   subsets: ["latin"],
