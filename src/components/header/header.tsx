@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import { Button } from "../ui/button";
-import { ModeToggle } from "../themes/button-theme";
-import Image from "next/image";
+import { AvatarFallback } from "@radix-ui/react-avatar";
 import { Bell, Pencil, Search } from "lucide-react";
+import { useState } from "react";
+import SignUpModal from "../modals/signup";
+import { ModeToggle } from "../themes/button-theme";
+import { Avatar, AvatarImage } from "../ui/avatar";
+import { Button } from "../ui/button";
 import HeaderMenu from "./header-menu";
 import MenuBtn from "./menu-btn";
-import SignUpModal from "../modals/signup";
-import { Avatar, AvatarImage } from "../ui/avatar";
-import { AvatarFallback } from "@radix-ui/react-avatar";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);

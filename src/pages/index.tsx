@@ -2,19 +2,9 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Header from "~/components/header/header";
 import { Button } from "~/components/ui/button";
+import Landing from "~/components/landing";
 
 import { api } from "~/utils/api";
-import { Inter } from "next/font/google";
-import Image from "next/image";
-
-import polkaDot from "../../public/images/hashnode_polka.webp";
-import gradient from "../../public/images/hashnode_blur.webp";
-import heroImage from "../../public/images/hashnode__hero.webp";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -28,44 +18,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className="  ">
-        <div className="relative flex h-[830px] flex-col gap-[2.25rem] overflow-hidden md:h-[900px] lg:h-[939px]">
-          <div className="relative z-[2] mt-28 flex flex-col items-center gap-[2.25rem] px-4 lg:mt-32">
-            <div className="flex max-w-4xl flex-col gap-[2.125rem] text-center">
-              <h1
-                className={`${inter.className} text-3xl font-bold   md:text-5xl xl:text-6xl`}
-              >
-                Where developer blogs meet community power!
-              </h1>
-              <p className="text-lg ">
-                Create and grow your developer blog, newsletter, or team
-                engineering blog effortlessly with Hashnode. Level up your
-                writing using powerful{" "}
-                <span className="font-bold">AI features!</span>
-              </p>
-            </div>
-            <div className="flex flex-col gap-7 md:flex-row">
-              <a className="block  w-60 rounded-full border border-solid border-hashaccent bg-white px-6 py-3 text-center text-lg text-slate-600 hover:bg-white/80 md:w-36">
-                Log in
-              </a>{" "}
-              <a
-                href=""
-                className="block w-60 rounded-full bg-hashaccent px-6 py-3 text-center text-lg text-white hover:bg-hashaccent/80 md:w-36"
-              >
-                Get started
-              </a>
-            </div>
-            <div className="max-w-4xl">
-              <Image src={heroImage} alt="" />
-            </div>
-          </div>
-
-          <div className="absolute inset-0 z-[1]">
-            <Image src={polkaDot} className="h-full" alt="" aria-hidden />
-          </div>
-          <div className="absolute inset-0">
-            <Image src={gradient} className="h-full" alt="" aria-hidden />
-          </div>
-        </div>
+        <Landing />
 
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <div className="max-w-4xl">
