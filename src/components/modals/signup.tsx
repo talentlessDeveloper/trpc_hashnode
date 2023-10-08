@@ -1,8 +1,7 @@
+import Link from "next/link";
 import React, { type SetStateAction } from "react";
 import Portal from "../portal";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Button } from "../ui/button";
-import Link from "next/link";
 
 type SignUpModalProps = {
   openSignUpModal: boolean;
